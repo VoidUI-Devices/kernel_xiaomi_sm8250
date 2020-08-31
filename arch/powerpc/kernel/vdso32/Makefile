@@ -31,7 +31,7 @@ ccflags-y += -nostdlib -Wl,-soname=linux-vdso32.so.1 \
 asflags-y := -D__VDSO32__ -s
 
 obj-y += vdso32_wrapper.o
-extra-y += vdso32.lds
+targets += vdso32.lds
 CPPFLAGS_vdso32.lds += -P -C -Upowerpc
 
 # Force dependency (incbin is bad)
