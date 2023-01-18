@@ -29,7 +29,7 @@ export BUILD
 cd "$KERNEL_TOP" || exit
 
 # These values must be changed for forks!
-KERNEL_DEFCONFIG_URL="https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250"
+KERNEL_DEFCONFIG_URL="https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250"
 KERNEL_DEFCONFIG_HEAD=$(git -C ${KERNEL_CFG} rev-parse HEAD)
 
 SOC="kona"
